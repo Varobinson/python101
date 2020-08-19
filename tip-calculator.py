@@ -23,11 +23,13 @@ split = input('How many people will be paying? ')
   #convert split to int
 split = int(split)
 
-if service.lower() == 'bad':
+service = service.lower()
+
+if service == 'bad':
     tip = total_bill * 0.1
-elif service.lower() == 'fair':
+elif service == 'fair':
     tip = total_bill * 0.15
-elif service.lower() == 'good':
+elif service == 'good':
     tip = total_bill * 0.2
 else: 
     print("Cant't help you! ")
