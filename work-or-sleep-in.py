@@ -1,12 +1,41 @@
-# Ask the user for their cat's age
-cat_age = input('How old is your cat? ')
-# Convert to an integer
-cat_age = int(cat_age)
-# Print one message if it's a kitten, otherwise do nothing
-if cat_age < 2:
- print('What a cute kitten!')
-elif cat_age < 9:
- print('What a big cat!')
-else:
- print('That is an old cat!')
+day = int(input('Day (0-6)? '))
+# Fill in your code here
 
+
+if day == 0:
+    print('Sunday')
+    if True:
+        print('Sleep in')
+
+elif day == 1:
+    print('Monday')
+    if True:
+        print('Go to work')
+
+elif day == 2:
+    print('Tuesday')
+    if True:
+        print('Go to work')
+
+elif day == 3:
+    print('Wednesday')
+    if True:
+        print('Go to work')
+
+elif day == 4:
+    print('Thursday')
+    if True:
+        print('Go to work')
+
+elif day == 5:
+    print('Friday')
+    if True:
+        print('Go to work')
+
+elif day == 6:
+    print('Saturday')
+    if True:
+        print('Sleep in')
+
+else:
+    print('Wrong Planet!')
