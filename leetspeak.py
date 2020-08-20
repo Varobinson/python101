@@ -2,21 +2,24 @@
 user_input = input('Enter a sentence! ')
 user_input = user_input.upper()
 
+translate = ''
+
 for letter in user_input:
     if letter == 'A':
-        print(4)
+        translate += '4'
     elif letter == 'E':
-        print(3)
+        translate += '3'
     elif letter == 'G':
-        print(6)
+        translate += '6'
     elif letter == 'I':
-        print(1)
+        translate += '1'
     elif letter == 'O':
-        print(0)
+        translate += '0'
     elif letter == 'S':
-        print(5)
+        translate += '5'
     elif letter == 'T':
-        print(7)
+        translate += '7'
     else:
-        print(letter)
+        translate += letter
+print(letter)
     
