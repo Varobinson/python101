@@ -1,4 +1,9 @@
-day = int(input('Day (0-6)? '))
+
+try:
+    day = int(input('Day (0-6)? '))
+except: 
+    print('Needs a number 0 -6! ')
+
 # Fill in your code here
 
 

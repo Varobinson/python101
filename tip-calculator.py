@@ -9,21 +9,24 @@
 #good -> 20%
 #fair -> 15%
 # bad -> 10%
-
+try:
 #Ask user for total bill amount 
-total_bill = input('What was your total? ')
+  total_bill = int(input('What was your total? '))
 #convert total to float
-total_bill = float(total_bill)
+
 #prompt user for service quality
-service = input('What was the service bad, fair, or good? ')
-tip = ()
+  service = input('What was the service bad, fair, or good? ')
+
 #adding split feature
   #promt user for split amount
-split = input('How many people will be paying? ')
+  split = input('How many people will be paying? ')
+except:
+  print('error')
+
   #convert split to int
 split = int(split)
-
-service = service.lower()
+tip = ()
+service = service.lower()    
 
 if service == 'bad':
     tip = total_bill * 0.1

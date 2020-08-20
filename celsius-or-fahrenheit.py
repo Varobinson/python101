@@ -3,10 +3,10 @@
 #display it to the user.
 
 #prompt user
-degrees_celsius = input('What is the degrees celcius? ')
-
-#take user input and convert it to integer
-degrees_celsius = int(degrees_celsius)
+try:
+    degrees_celsius = int(input('What is the degrees celcius? '))
+except ValueError:
+    print('Enter Valid Temp! ')
 #convert celsius to fahrenheit
 degrees_fahrenheit = (degrees_celsius * 9/5) + 32 
 #return fahrenheit to user
