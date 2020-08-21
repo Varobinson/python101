@@ -1,6 +1,5 @@
     
-user_input = input('Enter a sentence! ')
-user_input = user_input.upper()
+user_input = input('Enter a sentence! ').upper()
 
 translate = ''
 
@@ -21,5 +20,5 @@ for letter in user_input:
         translate += '7'
     else:
         translate += letter
-print(letter)
+print(translate)
     
